@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        body{
+            background: rgb(3, 3, 47);
+        }
+        .lds-facebook {
+  display: inline-block;
+  position: relative;
+  left: 48.5%;
+  right: 0;
+  top: 250px;
+  width: 100%;
+  margin: 0 auto;
+  height: 80px;
+}
+.lds-facebook div {
+  top: 12px;
+  height: 48px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  width: 16px;
+  background: rgb(105, 192, 220);
+  animation: lds-facebook 0.8s alternate infinite;
+}
+.lds-facebook div:nth-child(1) {
+animation-delay: -0.40s;
+  left: 8px;
+}
+.lds-facebook div:nth-child(2) {
+animation-delay: -0.25s;
+  left: 32px;
+}
+.lds-facebook div:nth-child(3) {
+animation-delay: -0.15s;
+  left: 56px;
+}
+.lds-facebook div:nth-child(4) {
+animation-delay: -0.05s;
+  left: 80px;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 12px;
+    height: 148px;
+  }
+    100% {
+    top: 54px;
+    height: 48px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="lds-facebook"><div></div><div></div><div></div><div></div></div>
+</body>
+</html>
